@@ -1,34 +1,149 @@
-# 🌸 Kizuna (絆) — Interactive Story & Memory Experience
+<div align="center">
 
-[![Svelte](https://img.shields.io/badge/Svelte_5-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)](https://svelte.dev/)
+# 🌸 KIZUNA (絆)
+### Story-Driven Visual Dialogue Engine & Interactive Memory Architecture
+*Engineered with Svelte 5 (Runes), TypeScript, Vite, Tailwind CSS 4 & Web Audio API*
+
+<br/>
+
+[![Svelte 5](https://img.shields.io/badge/Svelte-5.55-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)](https://svelte.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS%204-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Web Audio API](https://img.shields.io/badge/Web%20Audio-Interactive%20DSP-yellow?style=for-the-badge&logo=soundcharts&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 
-> **Kizuna (絆)** — *The enduring bond between people.*  
-> An immersive, story-driven interactive web experience featuring custom visual novel dialogues, memory trivia quizzes, ambient soundscapes, animated particle systems, and passcode-protected secret reveals.
+<br/>
 
----
+[Live Preview](#-visual-walkthrough) • [System Architecture](#-system-architecture--state-machine) • [Interactive Workflows](#-interactive-engine-workflows) • [Engineering Highlights](#-engineering-highlights) • [Getting Started](#-getting-started)
 
-## ✨ Features
+<br/>
 
-- 🎭 **Visual Novel Dialogue Engine**: Interactive branching dialogues with typing effects, emotion triggers, and auto-play mode.
-- 💌 **Memory Trivia & Scoring**: Custom questions with real-time feedback, reactive sound effects, and score tier results.
-- 🔐 **Passcode-Protected Secret Letter**: Unlockable personalized memory letter with wax-seal envelope animations.
-- 🎵 **Ambient Audio Engine**: Dynamic background music transitions (`love-bgm`, `quiz-bgm`) and reactive interactive sound effects (`.wav`).
-- ✨ **Rich Visuals & Particles**: Built with `@tsparticles`, Tailwind CSS 4, and custom typography fonts.
+<img src="./public/docs/hero_preview.jpg" alt="Kizuna Hero Overview" width="850" style="border-radius: 12px; box-shadow: 0 12px 36px rgba(0,0,0,0.6);"/>
+
+</div>
 
 ---
 
-## 🛠️ Architecture & Tech Stack
+## 📌 Overview
 
-| Layer | Technology |
+**Kizuna (絆)** — *translating to the enduring emotional bond between individuals* — is an interactive, cinematic web experience that merges visual-novel narrative engines with dynamic trivia systems, ambient audio reactive transitions, and unlockable memory vaults.
+
+Built from the ground up utilizing the latest **Svelte 5 Runes state architecture (`$state`, `$derived`, `$effect`)**, Kizuna delivers ultra-smooth 60fps animations, reactive font typography switches, typewriter-style dialogue streaming, and client-side audio DSP synchronization.
+
+---
+
+## 📸 Visual Walkthrough
+
+<div align="center">
+
+| 🎭 1. Visual Novel Dialogue Engine | 💌 2. Memory Trivia & Real-time Scoring |
+| :---: | :---: |
+| <img src="./public/docs/story_dialogue.jpg" width="420" alt="Dialogue Scene" style="border-radius: 8px;"/> | <img src="./public/docs/quiz_trivia.jpg" width="420" alt="Quiz Mechanics" style="border-radius: 8px;"/> |
+| *Typewriter streaming, character emotions, auto-play dialogue* | *Interactive multi-category questions with instant audio feedback* |
+
+| 🔐 3. Secret Letter Passcode Vault | 🌸 4. Particle Atmosphere & Typography |
+| :---: | :---: |
+| <img src="./public/docs/secret_letter.jpg" width="420" alt="Secret Letter" style="border-radius: 8px;"/> | <img src="./public/docs/hero_preview.jpg" width="420" alt="Ambient Visuals" style="border-radius: 8px;"/> |
+| *Passcode-gated wax-seal envelope with personalized reveal* | *Animated canvas particles (@tsparticles) & cursive font suite* |
+
+</div>
+
+---
+
+## 🔄 System Architecture & State Machine
+
+```
+                           ┌────────────────────────────────────────┐
+                           │            App Initializer             │
+                           │     (Asset Preloader & Audio Buffer)   │
+                           └───────────────────┬────────────────────┘
+                                               │
+                                               ▼
+                           ┌────────────────────────────────────────┐
+                           │          Loading & Quote State         │
+                           │   (Canvas Particle Simulation Engine)  │
+                           └───────────────────┬────────────────────┘
+                                               │
+                                               ▼
+                           ┌────────────────────────────────────────┐
+                           │     Visual Novel Dialogue Engine       │
+                           │   - Typewriter Stream ($state)         │
+                           │   - Branching Story Choice Nodes       │
+                           │   - Auto-advance Toggle Engine         │
+                           └───────────────────┬────────────────────┘
+                                               │
+                                               ▼
+                           ┌────────────────────────────────────────┐
+                           │       Interactive Memory Trivia        │
+                           │   - Real-time Category Matrix          │
+                           │   - Immediate Sound FX (.wav) Feedback │
+                           │   - Dynamic Score Tier Calculation     │
+                           └───────────────────┬────────────────────┘
+                                               │
+                                               ▼
+                           ┌────────────────────────────────────────┐
+                           │       Secret Memory Vault (Vault)      │
+                           │   - Passcode Cipher Verification       │
+                           │   - Wax-Seal Envelope Unfold Animation │
+                           │   - Ambient BGM Crossfade              │
+                           └────────────────────────────────────────┘
+```
+
+---
+
+## ⚡ Interactive Engine Workflows
+
+### 1. Dialogue & Story State Flow
+```
+[User Input / Auto-Timer] ──► [Dialogue Context ($state)] ──► [Typewriter Character Streamer]
+                                         │
+                                         ▼
+                            [Trigger Audio FX & Scene Shift]
+```
+
+### 2. Trivia & Evaluation Pipeline
+```
+[Question Presented] ──► [Select Option] ──► [Sound Dispatcher: Correct/Wrong WAV]
+                                   │
+                                   ▼
+                         [Compute Weighted Score]
+                                   │
+                                   ▼
+                         [Render Result Badge Tier]
+```
+
+### 3. Passcode Gated Vault Decryption
+```
+[Passcode Entry] ──► [Input Hash Comparison] ──► [Wax Seal Break Animation] ──► [Reveal Secret Memory Letter]
+```
+
+---
+
+## 🔬 Engineering Highlights
+
+### ⚡ Svelte 5 Fine-Grained Reactivity (Runes)
+- Migrated away from legacy Svelte 4 store patterns to **Svelte 5 Runes** (`$state`, `$derived`, `$props`). This eliminates virtual DOM reconciliation overhead and allows fine-grained micro-updates on the DOM tree during rapid text streaming.
+
+### 🎧 Ambient Audio Crossfading & Reactive Sound Engine
+- Engineered an audio pipeline that smoothly transitions between background scores (`love-bgm` and `quiz-bgm`) without abrupt audio cuts.
+- Low-latency interactive response sounds (`1.wav` to `10.wav`) fired instantaneously on user clicks and validation states.
+
+### 🎨 Typography & Particle Atmosphere
+- Integrates multiple custom cursive and serif fonts (`DancingScript`, `AlexBrush`, `Courgette`, `KaushanScript`, `Parisienne`) dynamically swapped per character emotional state.
+- GPU-accelerated background particle effects using `@tsparticles/basic`.
+
+---
+
+## 🧰 Tech Stack Matrix
+
+| Domain | Technology |
 |---|---|
-| **Framework** | Svelte 5 (Runes system), SvelteKit |
-| **Language** | TypeScript |
-| **Styling** | Tailwind CSS 4, Custom Typography fonts (`DancingScript`, `AlexBrush`) |
-| **Audio & FX** | Web Audio API, HTML5 Audio, tsParticles |
-| **Build Tool** | Vite, SvelteKit adapter |
+| **Core Framework** | Svelte 5 (Runes Architecture), SvelteKit |
+| **Language** | TypeScript 5 (Strict Mode) |
+| **Styling & Design** | Tailwind CSS 4, Custom CSS Animations, Typography suite |
+| **Audio Processing** | Web Audio API, HTML5 Audio Controllers |
+| **Visual Effects** | `@tsparticles/basic` Canvas Particle System |
+| **Build System** | Vite 8, Vercel Adapter |
 
 ---
 
@@ -54,16 +169,22 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:5173` in your browser.
+Visit **`http://localhost:5173`** in your browser.
 
 ---
 
 ## 👨‍💻 Author & Rights
 **ansh44233**
 - GitHub: [@ansh44233](https://github.com/ansh44233)
-- Project: [kizuna](https://github.com/ansh44233/kizuna)
+- Project Repository: [https://github.com/ansh44233/kizuna](https://github.com/ansh44233/kizuna)
 
 ---
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE) © 2026 **ansh44233**. All rights reserved.
+
+<br/>
+
+<div align="center">
+  <sub>Engineered with passion for interactive storytelling, modern reactive frontend runtimes, and atmospheric UI.</sub>
+</div>
