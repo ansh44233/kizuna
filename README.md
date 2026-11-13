@@ -14,11 +14,12 @@
 
 <br/>
 
-[Live Preview](#-visual-walkthrough) • [System Architecture](#-system-architecture--state-machine) • [Interactive Workflows](#-interactive-engine-workflows) • [Engineering Highlights](#-engineering-highlights) • [Getting Started](#-getting-started)
+[Live Preview](#-visual-walkthrough) • [Cinematic Showcase](#-cinematic-motion--gameplay) • [System Architecture](#-system-architecture--state-machine) • [Interactive Workflows](#-interactive-engine-workflows) • [Engineering Highlights](#-engineering-highlights) • [Getting Started](#-getting-started)
 
 <br/>
 
-<img src="./public/docs/real_quiz.png" alt="Kizuna Live Quiz Stage" width="850" style="border-radius: 12px; box-shadow: 0 12px 36px rgba(0,0,0,0.6);"/>
+### 🎬 Live Animated Experience
+<img src="./public/docs/quiz_motion.gif" alt="Kizuna Live Quiz Motion" width="850" style="border-radius: 12px; box-shadow: 0 16px 40px rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.1);"/>
 
 </div>
 
@@ -32,19 +33,32 @@ Built from the ground up utilizing the latest **Svelte 5 Runes state architectur
 
 ---
 
+## 🎥 Cinematic Motion & Gameplay
+
+<div align="center">
+
+| 🌸 1. Dynamic Quiz Ambience | 🎭 2. Cinematic Story Transition |
+| :---: | :---: |
+| <img src="./public/docs/quiz_motion.gif" width="420" alt="Quiz Motion" style="border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);"/> | <img src="./public/docs/story_motion.gif" width="420" alt="Story Motion" style="border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);"/> |
+| *Real-time looping ambient video canvas backdrop* | *Atmospheric visual dialogue transitions and particle loops* |
+
+</div>
+
+---
+
 ## 📸 Visual Walkthrough
 
 <div align="center">
 
 | 📝 1. Active Trivia Quiz Questions | ✅ 2. Real-Time Feedback & Dialogue Reaction |
 | :---: | :---: |
-| <img src="./public/docs/real_quiz.png" width="420" alt="Active Quiz Questions" style="border-radius: 8px;"/> | <img src="./public/docs/quiz_feedback.png" width="420" alt="Quiz Feedback Dialogue" style="border-radius: 8px;"/> |
+| <img src="./public/docs/real_quiz.png" width="420" alt="Active Quiz Questions" style="border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.4);"/> | <img src="./public/docs/quiz_feedback.png" width="420" alt="Quiz Feedback Dialogue" style="border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.4);"/> |
 | *Clean question cards, category metadata, and choice buttons* | *Dynamic answer validation, reaction dialogue, score calculation* |
 
-| 🎭 3. Cinematic Story Dialogue Stream | 🔐 4. Passcode Vault & Memory Reveal |
+| 🎭 3. Cinematic 1080p Story Stage | 🔐 4. Passcode Vault & Memory Reveal |
 | :---: | :---: |
-| <img src="./public/docs/story_dialogue.jpg" width="420" alt="Dialogue Scene" style="border-radius: 8px;"/> | <img src="./public/docs/secret_letter.jpg" width="420" alt="Secret Letter" style="border-radius: 8px;"/> |
-| *Typewriter text stream, character emotions, auto-play dialogue* | *Cipher-protected wax-seal envelope with secret memory letter* |
+| <img src="./public/docs/story_cinematic_bg.jpg" width="420" alt="Story Stage" style="border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.4);"/> | <img src="./public/docs/secret_letter.jpg" width="420" alt="Secret Letter" style="border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.4);"/> |
+| *High-res 2.5K anime cinematic story backdrop* | *Cipher-protected wax-seal envelope with secret memory letter* |
 
 </div>
 
