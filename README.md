@@ -1,18 +1,19 @@
-# 💖 Interactive Story Quiz & Memory Experience
+# 🌸 Kizuna (絆) — Interactive Story & Memory Experience
 
 [![Svelte](https://img.shields.io/badge/Svelte_5-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)](https://svelte.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-> An immersive, story-driven interactive web experience featuring custom visual novel style dialogues, relationship trivia quizzes, ambient soundscapes, animated particle systems, and secret envelope messages.
+> **Kizuna (絆)** — *The enduring bond between people.*  
+> An immersive, story-driven interactive web experience featuring custom visual novel dialogues, memory trivia quizzes, ambient soundscapes, animated particle systems, and passcode-protected secret reveals.
 
 ---
 
 ## ✨ Features
 
 - 🎭 **Visual Novel Dialogue Engine**: Interactive branching dialogues with typing effects, emotion triggers, and auto-play mode.
-- 💌 **Memory Quiz & Scoring**: Custom questions with real-time feedback, reactive sound effects, and score tier results.
+- 💌 **Memory Trivia & Scoring**: Custom questions with real-time feedback, reactive sound effects, and score tier results.
 - 🔐 **Passcode-Protected Secret Letter**: Unlockable personalized memory letter with wax-seal envelope animations.
 - 🎵 **Ambient Audio Engine**: Dynamic background music transitions (`love-bgm`, `quiz-bgm`) and reactive interactive sound effects (`.wav`).
 - ✨ **Rich Visuals & Particles**: Built with `@tsparticles`, Tailwind CSS 4, and custom typography fonts.
@@ -39,8 +40,8 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/ansh44233/hbd-kizu.git
-cd hbd-kizu
+git clone https://github.com/ansh44233/kizuna.git
+cd kizuna
 ```
 
 ### 2. Install dependencies
@@ -60,7 +61,7 @@ Visit `http://localhost:5173` in your browser.
 ## 👨‍💻 Author & Rights
 **ansh44233**
 - GitHub: [@ansh44233](https://github.com/ansh44233)
-- Project: [hbd-kizu](https://github.com/ansh44233/hbd-kizu)
+- Project: [kizuna](https://github.com/ansh44233/kizuna)
 
 ---
 
