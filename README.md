@@ -18,7 +18,7 @@
 
 <br/>
 
-<img src="./public/docs/hero_preview.jpg" alt="Kizuna Hero Overview" width="850" style="border-radius: 12px; box-shadow: 0 12px 36px rgba(0,0,0,0.6);"/>
+<img src="./public/docs/real_quiz.png" alt="Kizuna Live Quiz Stage" width="850" style="border-radius: 12px; box-shadow: 0 12px 36px rgba(0,0,0,0.6);"/>
 
 </div>
 
@@ -36,15 +36,15 @@ Built from the ground up utilizing the latest **Svelte 5 Runes state architectur
 
 <div align="center">
 
-| 🎭 1. Visual Novel Dialogue Engine | 💌 2. Memory Trivia & Real-time Scoring |
+| 📝 1. Active Trivia Quiz Questions | ✅ 2. Real-Time Feedback & Dialogue Reaction |
 | :---: | :---: |
-| <img src="./public/docs/story_dialogue.jpg" width="420" alt="Dialogue Scene" style="border-radius: 8px;"/> | <img src="./public/docs/quiz_trivia.jpg" width="420" alt="Quiz Mechanics" style="border-radius: 8px;"/> |
-| *Typewriter streaming, character emotions, auto-play dialogue* | *Interactive multi-category questions with instant audio feedback* |
+| <img src="./public/docs/real_quiz.png" width="420" alt="Active Quiz Questions" style="border-radius: 8px;"/> | <img src="./public/docs/quiz_feedback.png" width="420" alt="Quiz Feedback Dialogue" style="border-radius: 8px;"/> |
+| *Clean question cards, category metadata, and choice buttons* | *Dynamic answer validation, reaction dialogue, score calculation* |
 
-| 🔐 3. Secret Letter Passcode Vault | 🌸 4. Particle Atmosphere & Typography |
+| 🎭 3. Cinematic Story Dialogue Stream | 🔐 4. Passcode Vault & Memory Reveal |
 | :---: | :---: |
-| <img src="./public/docs/secret_letter.jpg" width="420" alt="Secret Letter" style="border-radius: 8px;"/> | <img src="./public/docs/hero_preview.jpg" width="420" alt="Ambient Visuals" style="border-radius: 8px;"/> |
-| *Passcode-gated wax-seal envelope with personalized reveal* | *Animated canvas particles (@tsparticles) & cursive font suite* |
+| <img src="./public/docs/story_dialogue.jpg" width="420" alt="Dialogue Scene" style="border-radius: 8px;"/> | <img src="./public/docs/secret_letter.jpg" width="420" alt="Secret Letter" style="border-radius: 8px;"/> |
+| *Typewriter text stream, character emotions, auto-play dialogue* | *Cipher-protected wax-seal envelope with secret memory letter* |
 
 </div>
 
@@ -93,15 +93,7 @@ Built from the ground up utilizing the latest **Svelte 5 Runes state architectur
 
 ## ⚡ Interactive Engine Workflows
 
-### 1. Dialogue & Story State Flow
-```
-[User Input / Auto-Timer] ──► [Dialogue Context ($state)] ──► [Typewriter Character Streamer]
-                                         │
-                                         ▼
-                            [Trigger Audio FX & Scene Shift]
-```
-
-### 2. Trivia & Evaluation Pipeline
+### 1. Trivia & Evaluation Pipeline
 ```
 [Question Presented] ──► [Select Option] ──► [Sound Dispatcher: Correct/Wrong WAV]
                                    │
@@ -110,6 +102,14 @@ Built from the ground up utilizing the latest **Svelte 5 Runes state architectur
                                    │
                                    ▼
                          [Render Result Badge Tier]
+```
+
+### 2. Dialogue & Story State Flow
+```
+[User Input / Auto-Timer] ──► [Dialogue Context ($state)] ──► [Typewriter Character Streamer]
+                                         │
+                                         ▼
+                            [Trigger Audio FX & Scene Shift]
 ```
 
 ### 3. Passcode Gated Vault Decryption
